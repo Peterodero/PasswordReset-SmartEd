@@ -40,9 +40,8 @@ function ResetPassword() {
 
   async function handleFormSubmit(event){
     event.preventDefault()
-    
     try {
-      const response = await fetch(`http://localhost:3000/reset-password/${token}`, {
+      const response = await fetch(`https://backend-smarted.onrender.com/reset-password/${token}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
